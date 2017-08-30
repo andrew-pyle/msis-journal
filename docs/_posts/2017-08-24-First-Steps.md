@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "MSIS Project First Steps"
-date:   2017-08-24 12:00:00 -0600
-categories:
+date:   2017-08-24 12:00:00 -0500
+categories: journal
 ---
 Today I kicked off my [MS Project](http://ualr.edu/informationscience/ms-in-information-science/) journey with a talk with [Dr. Daniel Berleant](http://ualr.edu/jdberleant/), the UA Little Rock MS-Information Science Graduate Coordinator. We discussed several project ideas from the University and several of my own design.
 
