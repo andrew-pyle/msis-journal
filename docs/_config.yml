@@ -17,7 +17,7 @@ title: MSIS Project Journal
 email: axpyle@ualr.edu
 description: > # this means to ignore newlines until "baseurl:"
   MS-Information Science Project Journal for Andrew Pyle at University of Arkansas at Little Rock.
-  Follow this site for progress updates in my Master's Project. Expect one post per week.
+  #Follow this site for progress updates in my Master's Project. Expect one post per week.
 baseurl: "/msis-project" # the subpath of your site, e.g. /blog
 url: "https://andrew-pyle.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
