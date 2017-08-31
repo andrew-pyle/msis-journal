@@ -3,14 +3,3 @@
 ---
 
 @import "minima";
-$base-font-family:
-  // Safari for OS X and iOS (San Francisco)
-  -apple-system,
-  // Chrome >= 56 for OS X (San Francisco), Windows, Linux and Android
-  system-ui,
-  // Chrome < 56 for OS X (San Francisco)
-  BlinkMacSystemFont,
-  // Windows   KDE       Ubuntu    Android
-  "Segoe UI", "Oxygen", "Ubuntu", "Roboto",
-  // Basic web fallback
-  "Helvetica Neue", Arial, sans-serif !default;
