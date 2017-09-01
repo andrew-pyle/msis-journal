@@ -33,6 +33,11 @@
   margin-bottom: 0;
   padding-left: 7px;
   float: left;
+  
+  @include media-query($on-palm) {
+    padding-left: 0px;
+    padding-right: 60px;
+  }
 }
 
 .site-nav {
