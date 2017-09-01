@@ -30,6 +30,7 @@ $content-width:    800px !default;
 
 $on-palm:          630px !default; //600px !default; // Minima Default
 $on-laptop:        800px !default;
+$on-iphone-5       568px !default; // Custom for shrinking title & subtitle
 
 // Use media queries like this:
 // @include media-query($on-palm) {
