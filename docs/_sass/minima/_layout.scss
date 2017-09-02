@@ -16,13 +16,14 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
+  padding-right: 7px;
   float: left;
 
   &,
   &:visited {
     color: $grey-color-dark;
   }
-  
+
   @include media-query($on-iphone5) {
     font-size: 24px;
   }
@@ -35,14 +36,12 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
-  padding-left: 7px;
   float: left;
-  
+
   @include media-query($on-palm) {
-    padding-left: 0px;
     padding-right: 60px;
   }
-  
+
   @include media-query($on-iphone5) {
     font-size: 20px;
   }
