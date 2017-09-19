@@ -1,0 +1,13 @@
+Date,Title,Author,Description,URL
+9/11/17,Natural Language Generation with Vocabulary Constraints,"Swanson et al., 2014",Generating sentence with word inclusion and vocab limits,http://aclanthology.coli.uni-saarland.de/pdf/W/W14/W14-1815.pdf
+9/12/17,Natural Language Processing with Python: Ch. 2 Accessing Text Corpora and Lexical Resources,"Bird, Klein, & Loper, 2009",Textbook,http://www.nltk.org/book/ch02.html
+9/12/17,Natural Language Processing with Python: Ch 3 Processing Raw Text ,"bird, Klein, & Loper, 2009",Textbook,http://www.nltk.org/book/ch03.html
+9/14/17,Speech and Language Processing: Ch. 15 Vector Semantics,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/15.pdf
+9/14/17,Speech and Language Processing: Ch. 16 Semantics with Dense Vectors,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/16.pdf
+9/15/17,Speech and Language Processing: Ch. 29 Dialog Systems and Chatbots,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/29.pdf
+9/15/17,Speech and Language Processing: Ch. 30 Advanced Dialog Systems,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/30.pdf
+,Adversarial Learning for Neural Dialogue Generation,"Cagan et al., 2017",,http://www.aclweb.org/anthology/P17-1122
+,Learning to Understand Phrases by Embedding the Dictionary,"Hill et al., 2016",,http://aclanthology.coli.uni-saarland.de/pdf/Q/Q16/Q16-1002.pdf
+,Adversarial Learning for Neural Dialogue Generation,"Li et al., 2017",,https://arxiv.org/pdf/1701.06547.pdf
+,Probabilistic Context-Free Grammars (PCFGs),Collins 2011,Columbia NLP Course Notes: Intro to PCFGs,http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/pcfgs.pdf
+,Social media responses,"Cagan et al., 2014",,http://www.aclweb.org/anthology/W14-2708
