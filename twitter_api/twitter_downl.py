@@ -37,3 +37,4 @@ with open('trump_tweets.pkl', 'wb') as f:
 tpkl = open('trump_tweets.pkl', 'rb')
 tt = pickle.load(tpkl)
 tpkl.close()
+
