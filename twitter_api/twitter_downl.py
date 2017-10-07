@@ -8,11 +8,14 @@ Created on Mon Oct  2 15:36:56 2017
 
 import twitter
 import pickle
+from tw_api import set_api
 
-api = twitter.Api(consumer_key='***REMOVED***',
-                  consumer_secret='***REMOVED***',
-                  access_token_key='***REMOVED***',
-                  access_token_secret='***REMOVED***')
+token = set_api()
+
+api = twitter.Api(consumer_key=token['consumer_key'],
+                  consumer_secret=token['consumer_secret'],
+                  access_token_key=token['access_token_key'],
+                  access_token_secret=token['access_token_secret'])
 
 trump = 'realDonaldTrump'
 
@@ -29,12 +32,11 @@ for x in range(20):
     new_max_id = trump_tweets[len(trump_tweets) - 1].id
     trump_tweets += get_timeline_page(trump, new_max_id)
 
-    
+
 with open('trump_tweets.pkl', 'wb') as f:
     pickle.dump(trump_tweets, f)
-    
+
 
 tpkl = open('trump_tweets.pkl', 'rb')
 tt = pickle.load(tpkl)
 tpkl.close()
-
