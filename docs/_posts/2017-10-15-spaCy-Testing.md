@@ -55,4 +55,9 @@ for word in doc:
 ```
 The newest challenge is Trump's tendency to issue multiple tweets which make a single thought, or document in NLP terms. Matching them together would reconstitute the thought, but would wreck the tweet structure I am trying to characterize. Keeping them separate would also wreck the completeness of the pattern that could be captured.
 
-I may have to remove all the double tweet documents. 
+>The Failing @nytimes, in a story by Peter Baker, should have mentioned the rapid terminations by me of TPP & The Paris Accord & the fast....  
+
+> ...approvals of The Keystone XL & Dakota Access pipelines. Also, look at the recent EPA cancelations & our great new Supreme Court Justice!
+
+
+I may have to remove all the double tweet documents.
