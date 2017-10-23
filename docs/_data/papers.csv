@@ -1,16 +1,17 @@
 Date,Title,Author,Description,URL
-9/11/2017,Natural Language Generation with Vocabulary Constraints,"Swanson et al., 2014",Generating sentence with word inclusion and vocab limits,http://aclanthology.coli.uni-saarland.de/pdf/W/W14/W14-1815.pdf
-9/12/2017,Natural Language Processing with Python: Ch. 2 Accessing Text Corpora and Lexical Resources,"Bird, Klein, & Loper, 2009",Textbook,http://www.nltk.org/book/ch02.html
-9/12/2017,Natural Language Processing with Python: Ch 3 Processing Raw Text,"Bird, Klein, & Loper, 2009",Textbook,http://www.nltk.org/book/ch03.html
-9/14/2017,Speech and Language Processing: Ch. 15 Vector Semantics,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/15.pdf
-9/14/2017,Speech and Language Processing: Ch. 16 Semantics with Dense Vectors,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/16.pdf
-9/15/2017,Speech and Language Processing: Ch. 29 Dialog Systems and Chatbots,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/29.pdf
-9/15/2017,Speech and Language Processing: Ch. 30 Advanced Dialog Systems,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/30.pdf
-9/25/2017,Natural Language Processing with Python: Ch. 5 Categorizing and Tagging Words,"Bird, Klein, & Loper, 2009",Textbook,http://www.nltk.org/book/ch05.html
-9/25/2017,Data-Driven Broad-Coverage Grammars for Opinionated Natural Language Generation (ONLG),"Cagan et al., 2017",Uses several PCFG models to generate a statement with a subject derived from topic modeling,http://www.aclweb.org/anthology/P17-1122
-9/25/2017,Probabilistic Context-Free Grammars (PCFGs),Collins 2011,Columbia NLP Course Notes: Intro to PCFGs,http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/pcfgs.pdf
+9/11/17,Natural Language Generation with Vocabulary Constraints,"Swanson et al., 2014",Generating sentence with word inclusion and vocab limits,http://aclanthology.coli.uni-saarland.de/pdf/W/W14/W14-1815.pdf
+9/12/17,Natural Language Processing with Python: Ch. 2 Accessing Text Corpora and Lexical Resources,"Bird, Klein, & Loper, 2009",Textbook,http://www.nltk.org/book/ch02.html
+9/12/17,Natural Language Processing with Python: Ch 3 Processing Raw Text,"Bird, Klein, & Loper, 2009",Textbook,http://www.nltk.org/book/ch03.html
+9/14/17,Speech and Language Processing: Ch. 15 Vector Semantics,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/15.pdf
+9/14/17,Speech and Language Processing: Ch. 16 Semantics with Dense Vectors,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/16.pdf
+9/15/17,Speech and Language Processing: Ch. 29 Dialog Systems and Chatbots,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/29.pdf
+9/15/17,Speech and Language Processing: Ch. 30 Advanced Dialog Systems,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/30.pdf
+9/25/17,Natural Language Processing with Python: Ch. 5 Categorizing and Tagging Words,"Bird, Klein, & Loper, 2009",Textbook,http://www.nltk.org/book/ch05.html
+9/25/17,Data-Driven Broad-Coverage Grammars for Opinionated Natural Language Generation (ONLG),"Cagan et al., 2017",Uses several PCFG models to generate a statement with a subject derived from topic modeling,http://www.aclweb.org/anthology/P17-1122
+9/25/17,Probabilistic Context-Free Grammars (PCFGs),Collins 2011,Columbia NLP Course Notes: Intro to PCFGs,http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/pcfgs.pdf
+9/17/17,Speech and Language Processing: Ch. 12 Syntactic Parsing,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/12.pdf
+9/19/17,Speech and Language Processing: Ch. 11 Formal Grammars of English,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/11.pdf
 ,Learning to Understand Phrases by Embedding the Dictionary,"Hill et al., 2016",,http://aclanthology.coli.uni-saarland.de/pdf/Q/Q16/Q16-1002.pdf
-,Speech and Language Processing: Ch. 12 Syntactic Parsing,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/12.pdf
 ,Adversarial Learning for Neural Dialogue Generation,"Li et al., 2017",,https://arxiv.org/pdf/1701.06547.pdf
 ,Social media responses,"Cagan et al., 2014",,http://www.aclweb.org/anthology/W14-2708
 ,Lexicalized Probabilistic Context-Free Grammars,Collins 2011,Columbia NLP Course Notes: Lexicalized PCFGs,http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/lexpcfgs.pdf
