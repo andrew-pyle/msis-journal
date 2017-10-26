@@ -17,6 +17,7 @@ Date,Title,Author,Description,URL
 10/24/17,Speech and Language Processing: Ch. 9 Hidden Markov Models,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/9.pdf
 10/24/17,Speech and Language Processing: Ch. 22 Semantic Role Labeling,"Jurafsky & Martin, 2017",Textbook Draft,https://web.stanford.edu/~jurafsky/slp3/22.pdf
 10/24/17,Accurate Unlexicalized Parsing,"Klein & Manning, 2003",Non-lexical improvements to the PCFG parsing model,https://nlp.stanford.edu/~manning/papers/unlexicalized-parsing.pdf
+10/25/17,Hierarchical Reinforcement Learning and Hidden Markov Models for Task-Oriented Natural Language Generation,"Dethlefs & Cuay‡huitl, 2011",Using Hidden Markov Models for surface realization,https://aclanthology.info/pdf/P/P11/P11-2115.pdf
 ,Learning to Understand Phrases by Embedding the Dictionary,"Hill et al., 2016",,http://aclanthology.coli.uni-saarland.de/pdf/Q/Q16/Q16-1002.pdf
 ,Adversarial Learning for Neural Dialogue Generation,"Li et al., 2017",,https://arxiv.org/pdf/1701.06547.pdf
 ,Social media responses,"Cagan et al., 2014",,http://www.aclweb.org/anthology/W14-2708
