@@ -7,3 +7,4 @@ __pycache__/
 *.pyc
 
 tw_api.py
+proposal_test.py
