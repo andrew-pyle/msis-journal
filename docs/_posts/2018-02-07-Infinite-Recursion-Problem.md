@@ -44,12 +44,12 @@ The issue is in the recursive structure of the CFG (e.g. `NP` is expandable to `
 | Nonterminal | Expansion | Current State |
 | -- | -- | -- |
 | `S` | `NP VP` | `NP VP` |
-| `NP` | `ADJ NP` | `ADJ NP` |
-| `ADJ` | `small` | `small NP` |
-| `NP` | `ADJ NP` | `small good NP` |
+| `NP` | `ADJ NP` | `ADJ NP VP` |
+| `ADJ` | `small` | `small NP VP` |
+| `NP` | `ADJ NP` | `small good NP VP` |
 | ∞ | ∞ | ∞ |
 
-[Eli Bendersky](https://eli.thegreenplace.net/2010/01/28/generating-random-sentences-from-a-context-free-grammar) developed an algorithm ([and released the Python code it into the public domain](https://eli.thegreenplace.net/pages/about)) to solve the problem by lowering a chosen expansion's future probability each time it is chosen.
+[Eli Bendersky](https://eli.thegreenplace.net/2010/01/28/generating-random-sentences-from-a-context-free-grammar) developed an algorithm ([and released the Python code into the public domain](https://eli.thegreenplace.net/pages/about)) to solve the problem by lowering each chosen expansion's future probability of being chosen again.
 
 The idea seems like it will work for me; I am discussing my possible implementation with Dr. Nitin Agarwal.
 
@@ -59,38 +59,38 @@ I've summarized the algorithm's basic idea below.
 set p(`all rules`) = 1.0
 `Sentence = S`
 
-Recursive Call # 1
+**Recursive Call # 1**
 `S` expanded to `NP VP`
 p(`S -> NP VP`) decreased
 `Sentence = NP VP`
 
-Recursive Call # 2
+**Recursive Call # 2**
 `NP` expanded to `ADJ NP`
 p(NP -> ADJ NP) decreased
 `Sentence = ADJ NP VP`
 
-Recursive Call # 3
+**Recursive Call # 3**
 `ADJ` expanded to `small`
 p(`ADJ -> small`) decreased
 `Sentence = small NP VP`
 
-Recursive Call # 4
+**Recursive Call # 4**
 now p(`NP -> ADJ NP`) < p(`NP -> NN`) so `NP -> NN` chosen
 `NP` expanded to `NN`
 p(`NP -> NN`) decreased
 `Sentence = small NN VP`
 
-Recursive Call # 5
+**Recursive Call # 5**
 `NN` expanded to `ball`
 p(`NN -> ball`) decreased
 `Sentence = small ball VP`
 
-Recursive Call # 6
+**Recursive Call # 6**
 `VP` expanded to `V`
 p(`VP -> V`) decreased
 `Sentence = small ball V`
 
-Recursive Call # 7
+**Recursive Call # 7**
 `V` expanded to `run`
 p(`V -> run`) decreased
 `Sentence = small ball run`
