@@ -8,3 +8,9 @@ __pycache__/
 
 tw_api.py
 proposal_test.py
+
+# Editor Config
+.vscode
+
+# Test files
+testing/
