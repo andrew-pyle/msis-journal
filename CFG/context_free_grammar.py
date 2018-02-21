@@ -129,7 +129,8 @@ class CFG(object):
                                        k=1)[0]  # NOTE Assumes len(list) == 1
             
             # Decrease future probability of chosen rule
-            # NOTE Assumes only one match of expansion in self.productions[symbol]
+            # NOTE Assumes only one match of expansion in self.productions
+            # [symbol]
             rule_weights[symbol][rules[symbol].index(expansion)] *= alpha  
 
             for rhs_symbol in expansion:
@@ -144,9 +145,87 @@ class CFG(object):
         return recurse(symbol, rule_weights)  
 
 
+    def nltk_expand(self, nonterminal, alpha=0.25):
+        """
+        Initialize a dict which will contain weights for each production used at
+        each level of recursion. rule_weights is passed by shallow copy between 
+        levels of recursion to avoid mutating an upper level's weights.
+
+        Adapted from public domain code in "Generating random sentences from a 
+        context free grammar" blog post © 2003-2018 Eli Bendersky 
+        https://eli.thegreenplace.net/2010/01/28/generating-random-sentences-
+            from-a-context-free-grammar
+
+        Args:
+            nonterminal (nltk.Nonterminal): The symbol from which to begin      
+                expansion. Must be contained in self.productions
+
+            self.productions (dict): Nonterminal symbols and their expansion    
+                                     possibilities
+                key: str
+                value: list of tuples
+
+                ex. self.productions = {
+                        'S': [('S', 'NP'),       # Possible expansions
+                            ('S', 'S', 'VP'),  # ...
+                            ('NP', 'VP')],     # ...
+                        'NP': [...],
+                        ...}
+            
+            alpha (float): Penalization parameter for repeated expansions. 
+            Alpha is multiplied by the previous probability of a chosen 
+            expansion, so probability of repeated expansion decreases as value 
+            decreases. 
+                    
+                    P = alpha ** N
+
+                    where P is probability of expansion being chosen
+                        N is number of times the rule has been expanded in the 
+                            current depth-first traversal.
+                        0 < alpha < 1.0
+        
+        Returns:
+            tuple of str: A grammatical sentence according to CFG
+        """
+
+        rules = copy.copy(self.productions)  # avoid mutating cfg
+        rule_weights = {}  # Initialize dict values to 1.0
+
+        def recurse(symbol, rule_weights):
+            sentence = ()
+
+            # Initialize nonterminal expansion weights
+            if symbol not in rule_weights:
+                rule_weights[symbol] = [1.0,] * len(rules[symbol])
+            # else, they're already set in an upper recursion level
+
+            print('rules[Nonterminal('+str(symbol)+')]=', rules[symbol])
+            print('rule_weights['+str(symbol)+']=', rule_weights[symbol])
+            expansion = random.choices(population=rules[symbol], 
+                                       weights=rule_weights[symbol],
+                                       k=1)[0]  # NOTE Assumes len(list) == 1
+            
+            # Decrease future probability of chosen rule
+            # NOTE Assumes only one match of expansion in self.productions
+            # [symbol]
+            rule_weights[symbol][rules[symbol].index(expansion)] *= alpha  
+
+            for rhs_symbol in expansion:
+                if rhs_symbol in rules:  # nonterminal symbol
+                    sentence += recurse(rhs_symbol, copy.copy(rule_weights))
+
+                else:  # terminal symbol
+                    sentence += (rhs_symbol,)
+
+            return sentence
+
+        return recurse(nonterminal, rule_weights)  
+
+
+
     def stringify_nltk_tree(self, tree):
         """
-        Convert NLTK Tree.productions() into raw Python types. Interfaces with CFG class. Do not mutate parameters.
+        Convert NLTK Tree.productions() into raw Python types. Interfaces with CFG class. Does not mutate parameters.
 
         Args:
             tree (nltk.Tree): NLTK data structure containing productions
