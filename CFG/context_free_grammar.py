@@ -124,7 +124,7 @@ class CFG(object):
                 rule_weights[symbol] = [1.0,] * len(rules[symbol])
             # else, they're already set in an upper recursion level
 
-            expansion = random.choices(population=self.productions[symbol], 
+            expansion = random.choices(population=rules[symbol], 
                                        weights=rule_weights[symbol],
                                        k=1)[0]  # NOTE Assumes len(list) == 1
             
@@ -199,8 +199,8 @@ class CFG(object):
                 rule_weights[symbol] = [1.0,] * len(rules[symbol])
             # else, they're already set in an upper recursion level
 
-            print('rules[Nonterminal('+str(symbol)+')]=', rules[symbol])
-            print('rule_weights['+str(symbol)+']=', rule_weights[symbol])
+            # print('rules[Nonterminal('+str(symbol)+')]=', rules[symbol])
+            # print('rule_weights['+str(symbol)+']=', rule_weights[symbol])
             expansion = random.choices(population=rules[symbol], 
                                        weights=rule_weights[symbol],
                                        k=1)[0]  # NOTE Assumes len(list) == 1
