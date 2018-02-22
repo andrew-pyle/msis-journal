@@ -57,18 +57,29 @@ def simple_stanford_parser():
     print(cfg.productions)
 
     generation_suite(cfg)
-    
+
 def stanford_with_nonterminal():
     # nlp = StanfordCoreNLP(r'/Users/asp/stanford-corenlp-full-2017-06-09')
     nlp = StanfordCoreNLP('http://localhost', port=9000)
 
-    text = ('The top Leadership and Investigators '
-    'of the FBI and the Justice Department have politicized the sacred inves'
-    'tigative process in favor of Democrats and against Republicans - someth'
-    'ing which would have been unthinkable just a short time ago. Rank & Fil'
-    'e are great people!')
+    text1 = '''The top Leadership and Investigators of the FBI and the Justice
+    Department have politicized the sacred investigative process in favor of
+    Democrats and against Republicans - something which would have been
+    unthinkable just a short time ago. Rank & File are great people!'''
 
-    rules = nlp.parse(text)
+    text2 = '''Whether we are Republican or Democrat, we must now focus on
+    strengthening Background Checks!'''
+
+    text3 = '''Republicans are now leading the Generic Poll, perhaps because of
+    the popular Tax Cuts which the Dems want to take away. Actually, they want
+    to raise you taxes, substantially. Also, they want to do nothing on DACA,
+    R’s want to fix! The U.S. economy is looking very good, in my opinion, even
+    better than anticipated. Companies are pouring back into our country,
+    reversing the long term trend of leaving. The unemployment numbers are
+    looking great, and Regulations & Taxes have been massively Cut! JOBS, JOBS,
+    JOBS'''
+
+    rules = nlp.parse(text3)
     tree = Tree.fromstring(rules)
     struct_rules = [(rule.lhs(), rule.rhs()) for rule in tree.productions()]
     d = defaultdict(list)
@@ -130,8 +141,8 @@ def nonterm_generation_suite(cfg):
 
 
 # simple_grammar()
-simple_stanford_parser()
-# stanford_with_nonterminal()
+# simple_stanford_parser()
+stanford_with_nonterminal()
 
 # nonterminal named identically to terminal causes infinite expansion until
 # p < Random.choice epsilon, so it's zero
