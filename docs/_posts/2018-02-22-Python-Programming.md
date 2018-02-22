@@ -12,6 +12,10 @@ This week I have succeeded in completing a test pipeline:
 ↓ `CFG` class  
 ↓ `CFG.expand()`  
 ↓ Grammatical Sentence  
+```python
+('Republicans','to','want','the','popular','Tax','Cuts',',','away','because',
+'of','the','Dems','want','away','take','away','.')
+```
 🎉 Celebrate! 🎉
 
 ## Problems
