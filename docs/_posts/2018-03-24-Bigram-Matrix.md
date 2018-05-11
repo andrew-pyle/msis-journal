@@ -29,4 +29,4 @@ Since this is such a small matrix, we can visually verify that the probabilities
 One point to note: `the` is present twice, but it's transition is the same both times. This results in a probability of 1.0, which is the same as other bigrams which are only present once. Transitions are not weighted according to frequency of use.
 
 ## What's the Point?
-This little program will allow me to calculate transition probabilities for the training corpus of tweets. We can best compare the output of my generation program with the corpus using cosine similarity. This method will be the first attempt at rating the output, as discussed in the [Rating Function]({{ site.baseurl }}{% post_url 2017-08-24-First-Steps %}) post.
+This little program will allow me to calculate transition probabilities for the training corpus of tweets. We can best compare the output of my generation program with the corpus using cosine similarity. This method will be the first attempt at rating the output, as discussed in the [Rating Function]({{ site.baseurl }}{% post_url 2018-03-16-Rating-Function %}) post.
