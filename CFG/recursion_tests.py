@@ -5,6 +5,8 @@ For each alpha value between 0.01 and 0.90 with a step of 0.01, gives the
 average length of 100 sentences for each alpha value.
 
 Uses the test grammar defined in rules.
+
+For generation of graph: average sentence length vs. alpha
 """
 import recursion
 
@@ -35,7 +37,7 @@ for a in range(1, 100):
     for x in range(100):
         sentence_lengths.append(
             len(recursion.expand(symbol, rules, alpha=a/100)))
-    
+
     # Write average of 100 runs to file
     with open('avg_sentence_length.txt', mode='a', encoding='utf-8') as f:
         f.write(str(sum(sentence_lengths) / len(sentence_lengths)) + '\n')
